@@ -1,5 +1,5 @@
 :root{
-	--oscuro 	: #04152a;	/*oscuro*/
+	--oscuro 	: #010217;	/*oscuro*/
 	--claro		: #c3e5f1;	/*claro*/
 	--blanco	: #ffffff;	/*blanco*/
 	--negro		: #000000;	/*negro*/
@@ -12,9 +12,10 @@
 
 body{
 	font-family: 'Quicksand';
-	font-size: 2.2vw;
+	font-size: 1.6vw;
 	font-weight: 400;
 	background-color: var(--oscuro);
+	background: linear-gradient(180deg, rgba(1, 2, 23,1) 94.5%, rgba(82,184,205,1) 100%);
 	color: var(--blanco);
 	width: 100%;
 	height: 100%;
@@ -101,11 +102,14 @@ header nav a:hover{
 .column .column-left .cover .btn-right{	
 	right: -2.1vw;
 	bottom: -2.1vw;
+    background: linear-gradient(90deg, rgba(1, 2, 23,1) 0%, rgba(82,184,205,1) 100%);
 }
 
 .column .column-left .cover .btn-left{
 	right: 66.7vw;
-	bottom: -2.1vw; 
+	bottom: -2.1vw;
+    
+    background: linear-gradient(90deg, rgba(82,184,205,1) 0%, rgba(1, 2, 23,1) 100%);
 }
 
 .column .column-left .cover .btn i{
@@ -132,7 +136,6 @@ header nav a:hover{
 }
 
 .column .column-left .cover .img-circle{
-	
 	position: absolute;
 	bottom: -20%;
 	left: 41%;
@@ -154,15 +157,17 @@ header nav a:hover{
     flex-direction: column;
     justify-content: flex-end;
     text-align: center;
-    padding-bottom: 2vw;
+    padding-bottom: 3vw;
 }
 
 .column .column-left .d-impar{
 	border-radius: 0 0 0 20px;
+    background: linear-gradient(90deg, rgba(1, 2, 23,1) 5%, rgba(82,184,205,1) 100%);
 }
 
 .column .column-left .d-par{
 	border-radius: 0 0 20px 0;
+    background: linear-gradient(90deg, rgba(82,184,205,1) 5%, rgba(1, 2, 23,1) 100%);
 }
 
 .column .column-right{
@@ -174,5 +179,8 @@ header nav a:hover{
 
 
 footer{
-
+	border-top: solid 2px var(--claro);
+	padding: 1.2vw 0;
+	text-align: center;
+	font-size: 1vw;
 }
