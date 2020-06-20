@@ -12,7 +12,7 @@
 
 body{
 	font-family: 'Quicksand';
-	font-size: 15px;
+	font-size: 2.2vw;
 	font-weight: 400;
 	background-color: var(--oscuro);
 	color: var(--blanco);
@@ -23,6 +23,11 @@ body{
 a, ul, li{
 	text-decoration: none;
 	color: var(--blanco);
+}
+
+h1, h2, h3, h4, h5, p{
+	padding: 0;
+	margin: 0;
 }
 
 p{
@@ -63,27 +68,108 @@ header nav a:hover{
 }
 
 .row{
-	display: flex;
-	flex-direction: column;
+	
 }
 
 .column{
-	border-radius: 20px;
-	border: solid 2px white;
-
-	display: flex;
+	padding: 0;
+	margin: 0;
 }
 
 .column .column-left{
 	width: 100%;
+	height: 50%;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 }
 
+.column .column-left .cover{
+	width: 100%;
+	height: 25vw;
+	position: relative;
+}
+
+.column .column-left .cover .btn{
+	background-color: var(--claro);
+	border-radius: 100%;
+	padding: 1vw;
+	position: absolute;
+}
+
+.column .column-left .cover .btn-right{	
+	right: -2.1vw;
+	bottom: -2.1vw;
+}
+
+.column .column-left .cover .btn-left{
+	right: 66.7vw;
+	bottom: -2.1vw; 
+}
+
+.column .column-left .cover .btn i{
+	display: block;
+	font-size: 2.5vw;
+}
+
+.column .column-left .cover .img-cover{
+	width: 100%;
+	height: 100%;
+}
+
+.column .column-left .cover .img-cover img{
+	width: 100%;
+	height: 100%;
+}
+
+.column .column-left .cover .img-cover .impar{
+	border-radius: 20px 0 0 0;
+}
+
+.column .column-left .cover .img-cover .par{
+	border-radius: 0 20px 0 0;
+}
+
+.column .column-left .cover .img-circle{
+	
+	position: absolute;
+	bottom: -20%;
+	left: 41%;
+}
+
+.column .column-left .cover .img-circle img{
+	display: block;
+	width: 12vw;
+	height: 12vw;
+	border-radius: 100%;
+	border: solid 3px var(--blanco);
+}
+
+.column .column-left .d-left{
+	background-color: var(--claro);
+	width: 100%;
+	height: 15vw;
+	display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align: center;
+    padding-bottom: 2vw;
+}
+
+.column .column-left .d-impar{
+	border-radius: 0 0 0 20px;
+}
+
+.column .column-left .d-par{
+	border-radius: 0 0 20px 0;
+}
+
 .column .column-right{
 	display: none;
+	background-color: var(--blanco);
+	color: var(--claro);
+	padding: 10px;
 }
 
 
