@@ -1,0 +1,92 @@
+:root{
+	--oscuro 	: #04152a;	/*oscuro*/
+	--claro		: #c3e5f1;	/*claro*/
+	--blanco	: #ffffff;	/*blanco*/
+	--negro		: #000000;	/*negro*/
+}
+
+
+*{
+	box-sizing: border-box;
+}
+
+body{
+	font-family: 'Quicksand';
+	font-size: 15px;
+	font-weight: 400;
+	background-color: var(--oscuro);
+	color: var(--blanco);
+	width: 100%;
+	height: 100%;
+}
+
+a, ul, li{
+	text-decoration: none;
+	color: var(--blanco);
+}
+
+p{
+	font-family: 'Roboto';
+}
+
+main{
+	margin: 40px 0;
+
+}
+
+.marco{
+	margin: 0 15%;
+}
+
+header{
+	padding: 20px 0;
+	border-bottom: solid 2px var(--claro);
+}
+
+header .menu{
+	padding: 0 5%;
+}
+
+header nav{
+	
+	display: flex;
+	justify-content: space-between;
+	font-size: 35px;
+}
+
+header nav a:hover{
+	color: var(--claro);
+}
+
+.container{
+
+}
+
+.row{
+	display: flex;
+	flex-direction: column;
+}
+
+.column{
+	border-radius: 20px;
+	border: solid 2px white;
+
+	display: flex;
+}
+
+.column .column-left{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.column .column-right{
+	display: none;
+}
+
+
+footer{
+
+}
